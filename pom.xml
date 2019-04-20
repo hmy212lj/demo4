@@ -4,15 +4,15 @@
   <artifactId>ssm_jxzj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+
+    <properties>
+        <spring.libs.version>4.3.7.RELEASE</spring.libs.version>
+        <spring.webmvc.version>4.3.7.RELEASE</spring.webmvc.version>
+    </properties>
+
   <dependencies>
 
-	      <dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-			<scope>provided</scope>
-		</dependency>
-	
+
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.1.6.RELEASE</version>
+			<version>${spring.webmvc.version}</version>
 		</dependency>
 		
 		<dependency>
@@ -45,20 +45,15 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.3.7.RELEASE</version>
+			<version>${spring.libs.version}</version>
 		</dependency>
-			<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>4.3.7.RELEASE</version>
-		</dependency>
-		
+
 		
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.3.7.RELEASE</version>
+			<version>${spring.libs.version}</version>
 		</dependency>
 
 		<!--MyBatis -->
@@ -98,12 +93,18 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-			<scope>provided</scope>
-		</dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.0.1</version>
+          <scope>provided</scope>
+      </dependency>
 
 
 		<!-- junit -->
@@ -112,6 +113,15 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
+			<scope>test</scope>
 		</dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-test</artifactId>
+          <version>${spring.libs.version}</version>
+          <scope>test</scope>
+      </dependency>
+
+
 	</dependencies>
 </project>

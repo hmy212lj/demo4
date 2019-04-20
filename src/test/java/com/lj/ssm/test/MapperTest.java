@@ -1,20 +1,16 @@
 package com.lj.ssm.test;
 
-import java.applet.AppletContext;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.lj.ssm.dao.StudentsMapper;
-import com.lj.ssm.dao.TeacherMapper;
 
 /**
- * ²âÊÔdao²ãµÄ¹¤×÷
+ * ï¿½ï¿½ï¿½ï¿½daoï¿½ï¿½Ä¹ï¿½ï¿½ï¿½
  * 
  * @author liu
  *
@@ -23,18 +19,14 @@ import com.lj.ssm.dao.TeacherMapper;
 @ContextConfiguration(locations={"classpath:applicationContext.xml"})
 public class MapperTest {
 	/**
-	 * ²âÊÔStudentMapper
+	 * ï¿½ï¿½ï¿½ï¿½StudentMapper
 	 */
-	@Autowired
-	StudentsMapper studentsMapper;
+	//@Autowired
+	//StudentsMapper studentsMapper;
+
 	@Test
 	public void testCRUD() {
 		
-	/*	// 1c´´½¨springIocÈÝÆ÷
-		ApplicationContext ioc = new ClassPathXmlApplicationContext("applicationContext.xml");
-		// 2´ÓÈÝÆ÷ÖÐ»ñÈ¡mapper
-		TeacherMapper bean=ioc.getBean(TeacherMapper.class);
-	*/
-		System.out.println(studentsMapper);
+	//	System.out.println(studentsMapper);
 	}
 }
